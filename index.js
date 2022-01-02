@@ -16,7 +16,8 @@ for(let month = 1; month < 13; month++){
                 console.log(`stderr: ${stderr}`);
                 return;
             }
-            logger.complete(`\nstdout: ${stdout}`);
+            logger.awaiting(`\nstdout: ${stdout}`);
+            logger.complete(`Commited to 2022-${month}-${day}`)
         });
     }
 }
