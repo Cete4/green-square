@@ -9,11 +9,11 @@ for(let month = 1; month < 2; month++){
 
         exec(`git add . && git commit --date '2022-${month}-${day}' -m 'commit' && git push`, (error, stdout, stderr) => {
             if (error) {
-                console.log(`error: ${error.message}`);
+                logger.error(`error: ${error.message}`);
                 return;
             }
             if (stderr) {
-                console.log(`stderr: ${stderr}`);
+                logger.error(`stderr: ${stderr}`);
                 return;
             }
             logger.awaiting(`\nstdout: ${stdout}`);
