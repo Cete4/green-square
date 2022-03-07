@@ -5,7 +5,7 @@ const logger = signale;
 
 logger.start("--------------- Script start ---------------")
 
-exec("dir", (error, stdout, stderr) => {
+exec(`git add . && git commit --date '2022-03-06' -m 'commit'`, (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -14,7 +14,7 @@ exec("dir", (error, stdout, stderr) => {
         console.log(`stderr: ${stderr}`);
         return;
     }
-    console.log(`stdout: ${stdout}`);
+    logger.complete(`\nstdout: ${stdout}`);
+    logger.success("--------------- Script end ---------------")
 });
 
-logger.success("--------------- Script end ---------------")
