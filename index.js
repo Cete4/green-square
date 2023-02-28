@@ -15,6 +15,5 @@ exec(`git add . && git commit --date '2022-03-06' -m 'commit' && git push`, (err
         return;
     }
     logger.complete(`\nstdout: ${stdout}`);
-    logger.success("--------------- Script end ---------------")
 });
 
