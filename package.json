@@ -1,9 +1,11 @@
 {
+  "type": "module",
   "name": "green-square",
   "version": "1.0.0",
   "description": "A script that will keep all the squares green",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/Cete4/green-square/issues"
   },
-  "homepage": "https://github.com/Cete4/green-square#readme"
+  "homepage": "https://github.com/Cete4/green-square#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "signale": "^1.4.0"
+  }
 }
