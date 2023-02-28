@@ -1,0 +1,26 @@
+{
+  "name": "green-square",
+  "version": "1.0.0",
+  "description": "A script that will keep all the squares green",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cete4/green-square.git"
+  },
+  "keywords": [
+    "script",
+    "javascript",
+    "node",
+    "npm",
+    "cool"
+  ],
+  "author": "Micah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cete4/green-square/issues"
+  },
+  "homepage": "https://github.com/Cete4/green-square#readme"
+}
